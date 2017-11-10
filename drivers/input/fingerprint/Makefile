@@ -1,0 +1,15 @@
+#
+# Makefile for all kinds of Fingerprint
+#
+
+obj-$(CONFIG_FINGERPRINT_GOODIX_GF_TEE) += Goodix/
+obj-$(CONFIG_FINGERPRINT_GOODIX_FP) += goodix/
+obj-$(CONFIG_FINGERPRINT_GT368) += gx368/
+obj-$(CONFIG_FINGERPRINT_GT556) += gx556/
+obj-$(CONFIG_FINGERPRINT_GT368_OTP) += gx368_otp/
+obj-$(CONFIG_FINGERPRINT_MICROARRAY_FP) += microarray/
+obj-$(CONFIG_FPC_FINGERPRINT) += fpc/
+obj-$(CONFIG_FINGERPRINT_CS15XX) += cs15xx/
+obj-$(CONFIG_FINGERPRINT_SW9551) += sw9551_fp/
+obj-$(CONFIG_FINGERPRINT_FPS) += fps/
+

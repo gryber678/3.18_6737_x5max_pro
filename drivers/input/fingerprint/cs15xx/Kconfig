@@ -1,0 +1,7 @@
+config FINGERPRINT_CS15XX
+	bool "cs15xx(chipsailing fingerprint sensor)"
+	default n
+	help
+	It support different type sensor
+	in this platform. If this option
+	is set, it will support fingerprint cs15xx/cs25xx fp sensor.

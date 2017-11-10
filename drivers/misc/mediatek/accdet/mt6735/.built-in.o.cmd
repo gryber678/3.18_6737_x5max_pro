@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/accdet/mt6735/built-in.o :=  /home/senya/arm-eabi-4.8/bin/arm-eabi-ld -EL    -r -o drivers/misc/mediatek/accdet/mt6735/built-in.o drivers/misc/mediatek/accdet/mt6735/accdet.o 

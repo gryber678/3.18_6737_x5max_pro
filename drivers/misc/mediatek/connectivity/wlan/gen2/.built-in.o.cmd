@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/connectivity/wlan/gen2/built-in.o :=  /home/senya/arm-eabi-4.8/bin/arm-eabi-ld -EL    -r -o drivers/misc/mediatek/connectivity/wlan/gen2/built-in.o drivers/misc/mediatek/connectivity/wlan/gen2/wlan_gen2.o 
