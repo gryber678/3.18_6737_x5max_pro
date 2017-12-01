@@ -1,1 +1,0 @@
-cmd_drivers/gpio/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/gpio/built-in.o drivers/gpio/devres.o drivers/gpio/gpiolib.o drivers/gpio/gpiolib-legacy.o drivers/gpio/gpiolib-of.o 

@@ -1,1 +1,0 @@
-cmd_drivers/hid/hid.o := /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/hid/hid.o drivers/hid/hid-debug.o drivers/hid/hid-core.o drivers/hid/hid-input.o drivers/hid/hidraw.o 

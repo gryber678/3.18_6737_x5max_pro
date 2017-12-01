@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/lcm/nt35521_boe50_xld_hd/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/lcm/nt35521_boe50_xld_hd/built-in.o drivers/misc/mediatek/lcm/nt35521_boe50_xld_hd/nt35521_boe50_xld_hd.o 

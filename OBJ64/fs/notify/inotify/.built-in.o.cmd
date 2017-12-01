@@ -1,1 +1,0 @@
-cmd_fs/notify/inotify/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o fs/notify/inotify/built-in.o fs/notify/inotify/inotify_fsnotify.o fs/notify/inotify/inotify_user.o 

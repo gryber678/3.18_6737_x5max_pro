@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/gpu/mt6735/mali-r12p1/drivers/gpu/arm/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/gpu/mt6735/mali-r12p1/drivers/gpu/arm/built-in.o drivers/misc/mediatek/gpu/mt6735/mali-r12p1/drivers/gpu/arm/midgard/built-in.o 

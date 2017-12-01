@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/sched/mt_cpu_affinity/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/sched/mt_cpu_affinity/built-in.o drivers/misc/mediatek/sched/mt_cpu_affinity/mt_sched.o drivers/misc/mediatek/sched/mt_cpu_affinity/mt_compat_sched.o 

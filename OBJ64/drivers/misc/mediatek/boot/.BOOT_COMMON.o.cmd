@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/boot/BOOT_COMMON.o := /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/boot/BOOT_COMMON.o drivers/misc/mediatek/boot/mt_boot_common.o drivers/misc/mediatek/boot/mt_boot.o 

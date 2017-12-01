@@ -1,1 +1,0 @@
-cmd_arch/arm64/kernel/vdso/vdso.so := /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-objcopy -S  arch/arm64/kernel/vdso/vdso.so.dbg arch/arm64/kernel/vdso/vdso.so

@@ -1,1 +1,0 @@
-cmd_block/partitions/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o block/partitions/built-in.o block/partitions/check.o block/partitions/msdos.o block/partitions/efi.o 

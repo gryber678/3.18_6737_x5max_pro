@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/gpio/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/gpio/built-in.o drivers/misc/mediatek/gpio/mt_gpio_core.o drivers/misc/mediatek/gpio/mt6735/built-in.o 

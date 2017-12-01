@@ -1,1 +1,0 @@
-cmd_drivers/input/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/input/built-in.o drivers/input/input-core.o drivers/input/evdev.o drivers/input/keyboard/built-in.o drivers/input/touchscreen/built-in.o drivers/input/misc/built-in.o drivers/input/fingerprint/built-in.o 

@@ -1,1 +1,0 @@
-cmd_drivers/power/mediatek/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/power/mediatek/built-in.o drivers/power/mediatek/battery_meter.o drivers/power/mediatek/battery_common.o drivers/power/mediatek/linear_charging.o 

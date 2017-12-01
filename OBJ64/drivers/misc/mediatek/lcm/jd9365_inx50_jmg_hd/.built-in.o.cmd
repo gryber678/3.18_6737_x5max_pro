@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/lcm/jd9365_inx50_jmg_hd/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/lcm/jd9365_inx50_jmg_hd/built-in.o drivers/misc/mediatek/lcm/jd9365_inx50_jmg_hd/jd9365_inx50_jmg_hd.o 

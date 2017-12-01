@@ -1,1 +1,0 @@
-cmd_drivers/staging/android/ion/mtk/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/staging/android/ion/mtk/built-in.o drivers/staging/android/ion/mtk/ion_drv.o drivers/staging/android/ion/mtk/ion_mm_heap.o drivers/staging/android/ion/mtk/ion_fb_heap.o 

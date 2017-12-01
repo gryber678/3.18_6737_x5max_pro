@@ -1,1 +1,0 @@
-cmd_drivers/video/logo/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/video/logo/built-in.o drivers/video/logo/logo.o drivers/video/logo/logo_linux_mono.o drivers/video/logo/logo_linux_vga16.o drivers/video/logo/logo_linux_clut224.o 

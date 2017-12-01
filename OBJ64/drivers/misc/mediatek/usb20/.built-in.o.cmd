@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/usb20/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/usb20/built-in.o drivers/misc/mediatek/usb20/mt6735/built-in.o drivers/misc/mediatek/usb20/musb_hdrc.o drivers/misc/mediatek/usb20/mtk_qmu.o drivers/misc/mediatek/usb20/musb_qmu.o 

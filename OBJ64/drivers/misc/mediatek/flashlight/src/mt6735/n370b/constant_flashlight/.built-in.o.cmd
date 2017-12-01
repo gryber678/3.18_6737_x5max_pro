@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/flashlight/src/mt6735/n370b/constant_flashlight/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/flashlight/src/mt6735/n370b/constant_flashlight/built-in.o drivers/misc/mediatek/flashlight/src/mt6735/n370b/constant_flashlight/leds_strobe.o 

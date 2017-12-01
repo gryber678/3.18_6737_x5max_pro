@@ -1,7 +1,0 @@
-n370b.o: ../arch/arm64/boot/dts/n370b.dts \
- ../arch/arm64/boot/dts/mt6735m.dtsi \
- ../arch/arm64/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
- ../arch/arm64/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
- ../arch/arm64/boot/dts/mt6735m-pinfunc.h ../arch/arm64/boot/dts/mt65xx.h \
- ../arch/arm64/boot/dts/include/dt-bindings/mmc/mt67xx-msdc.h \
- arch/arm64/boot/dts/cust.dtsi ../arch/arm64/boot/dts/trusty.dtsi

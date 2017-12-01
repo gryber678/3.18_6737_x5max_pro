@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/m4u/mt6735/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/m4u/mt6735/built-in.o drivers/misc/mediatek/m4u/mt6735/mt6735m/built-in.o drivers/misc/mediatek/m4u/mt6735/m4u_hw.o 

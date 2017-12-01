@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/base/power/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/base/power/built-in.o drivers/misc/mediatek/base/power/mt6735/built-in.o drivers/misc/mediatek/base/power/spm_v1/built-in.o drivers/misc/mediatek/base/power/cpuidle_v1/built-in.o 

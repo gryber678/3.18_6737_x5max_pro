@@ -1,1 +1,0 @@
-cmd_drivers/char/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/char/built-in.o drivers/char/frandom.o drivers/char/mem.o drivers/char/random.o drivers/char/misc.o drivers/char/agp/built-in.o 

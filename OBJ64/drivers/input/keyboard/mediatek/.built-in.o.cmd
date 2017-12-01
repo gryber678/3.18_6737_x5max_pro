@@ -1,1 +1,0 @@
-cmd_drivers/input/keyboard/mediatek/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/input/keyboard/mediatek/built-in.o drivers/input/keyboard/mediatek/kpd.o drivers/input/keyboard/mediatek/mt6735/built-in.o 

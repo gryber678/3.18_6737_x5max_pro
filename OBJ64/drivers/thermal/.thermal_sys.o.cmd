@@ -1,1 +1,0 @@
-cmd_drivers/thermal/thermal_sys.o := /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/thermal/thermal_sys.o drivers/thermal/thermal_core.o drivers/thermal/of-thermal.o drivers/thermal/backward_compatible.o 

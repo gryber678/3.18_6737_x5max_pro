@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/lcm/hx8394d_cmi50_blj_hd/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/lcm/hx8394d_cmi50_blj_hd/built-in.o drivers/misc/mediatek/lcm/hx8394d_cmi50_blj_hd/hx8394d_cmi50_blj_hd.o 

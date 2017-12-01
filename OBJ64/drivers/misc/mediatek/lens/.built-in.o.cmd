@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/lens/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/lens/built-in.o drivers/misc/mediatek/lens/main_lens.o drivers/misc/mediatek/lens/sub_lens.o drivers/misc/mediatek/lens/common/fm50af/built-in.o drivers/misc/mediatek/lens/common/dw9814af/built-in.o 

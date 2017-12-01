@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/m4u/2.0/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/m4u/2.0/built-in.o drivers/misc/mediatek/m4u/2.0/m4u.o drivers/misc/mediatek/m4u/2.0/m4u_mva.o drivers/misc/mediatek/m4u/2.0/m4u_pgtable.o drivers/misc/mediatek/m4u/2.0/m4u_debug.o 

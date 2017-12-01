@@ -1,1 +1,0 @@
-cmd_arch/arm64/crypto/aes-ce-blk.o := /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o arch/arm64/crypto/aes-ce-blk.o arch/arm64/crypto/aes-glue-ce.o arch/arm64/crypto/aes-ce.o 

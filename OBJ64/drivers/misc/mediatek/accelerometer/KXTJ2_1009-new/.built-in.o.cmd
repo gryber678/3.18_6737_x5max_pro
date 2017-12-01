@@ -1,1 +1,0 @@
-cmd_drivers/misc/mediatek/accelerometer/KXTJ2_1009-new/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/accelerometer/KXTJ2_1009-new/built-in.o drivers/misc/mediatek/accelerometer/KXTJ2_1009-new/kxtj2_1009.o 
