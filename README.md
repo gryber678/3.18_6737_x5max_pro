@@ -2,5 +2,6 @@
 # doogee x5 max pro | oneclick x5 max pro
 __________________________________________________________________________________________________________________
 Work: all
+__________________________________________________________________________________________________________________
 Tweaks: DFsync,Frandom,blx,gpu midgard r14p0,overclock,live display,Miravision,new governors,new schedulers,tweaks framebuffer's,thunderquake engine,remove DEBUG_INFO,add exfat fs.
 ___________________________________________________________________________________________________________________
