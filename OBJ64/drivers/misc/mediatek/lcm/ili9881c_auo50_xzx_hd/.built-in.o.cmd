@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/lcm/ili9881c_auo50_xzx_hd/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/lcm/ili9881c_auo50_xzx_hd/built-in.o drivers/misc/mediatek/lcm/ili9881c_auo50_xzx_hd/ili9881c_auo50_xzx_hd.o 

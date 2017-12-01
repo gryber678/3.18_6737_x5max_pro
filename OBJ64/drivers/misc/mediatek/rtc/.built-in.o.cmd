@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/rtc/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/rtc/built-in.o drivers/misc/mediatek/rtc/mtk_rtc_common.o drivers/misc/mediatek/rtc/mtk_rtc_hal_common.o drivers/misc/mediatek/rtc/mt6328/built-in.o 

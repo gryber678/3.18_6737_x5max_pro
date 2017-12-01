@@ -310,6 +310,7 @@ extern LCM_DRIVER jd9161_ivo50_hongzhan_fwvga_lcm_drv;
 extern LCM_DRIVER rm69052_auo50_dws_hd_lcm_drv;
 extern LCM_DRIVER rm67120_gvo55_ruiding_hd_lcm_drv;
 extern LCM_DRIVER rm69071_auo50_dws_hd_lcm_drv;
+extern LCM_DRIVER rm68200_tm50_xld_hd_lcm_drv;
 extern LCM_DRIVER jd9365_cpt55_shengshi_hd_lcm_drv;
 extern LCM_DRIVER st7701_boe397_tn_wvga_lcm_drv;
 #endif

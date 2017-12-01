@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/eccci/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/eccci/built-in.o drivers/misc/mediatek/eccci/ccci.o drivers/misc/mediatek/eccci/mt6735/built-in.o 

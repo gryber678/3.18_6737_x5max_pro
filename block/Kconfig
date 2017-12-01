@@ -106,10 +106,18 @@ config BLK_CMDLINE_PARSER
 	---help---
 	Enabling this option allows you to specify the partition layout from
 	the kernel boot args.  This is typically of use for embedded devices
+	
+	
+
 	which don't otherwise have any standardized method for listing the
 	partitions on a block device.
 
 	See Documentation/block/cmdline-partition.txt for more information.
+	
+config BLK_MQ_RDMA
+	bool
+	depends on BLOCK && INFINIBAND
+	default y
 
 menu "Partition Types"
 
@@ -122,6 +130,11 @@ endif # BLOCK
 config BLOCK_COMPAT
 	bool
 	depends on BLOCK && COMPAT
+	default y
+
+config BLK_MQ_RDMA
+	bool
+	depends on BLOCK && INFINIBAND
 	default y
 
 source block/Kconfig.iosched

@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/hibcore/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/hibcore/built-in.o drivers/misc/mediatek/hibcore/mtk_hibernate_dpm.o drivers/misc/mediatek/hibcore/mtk_hibernate_core.o 

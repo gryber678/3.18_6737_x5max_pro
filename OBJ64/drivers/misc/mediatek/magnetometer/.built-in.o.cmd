@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/magnetometer/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/magnetometer/built-in.o drivers/misc/mediatek/magnetometer/mag.o drivers/misc/mediatek/magnetometer/mag_factory.o drivers/misc/mediatek/magnetometer/qmc6983-new/built-in.o 

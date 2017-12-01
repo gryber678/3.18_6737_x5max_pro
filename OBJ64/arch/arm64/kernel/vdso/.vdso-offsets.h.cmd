@@ -1,0 +1,1 @@
+cmd_arch/arm64/kernel/vdso/vdso-offsets.h := 	/home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-nm arch/arm64/kernel/vdso/vdso.so.dbg | ../arch/arm64/kernel/vdso/gen_vdso_offsets.sh | LC_ALL=C sort > arch/arm64/kernel/vdso/vdso-offsets.h && cp arch/arm64/kernel/vdso/vdso-offsets.h include/generated/

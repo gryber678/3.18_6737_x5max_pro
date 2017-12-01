@@ -7,6 +7,12 @@ menuconfig MEDIATEK_SOLUTION
 
 if MEDIATEK_SOLUTION
 
+config THUNDERQUAKE_ENGINE_GPL
+	tristate "Vibrator Intensity Controller for MTK Vibrator"
+	default n
+	help
+	  Vibrator Intensity Controller for MTK Vibrator v1.0
+
 config MTK_PLATFORM
 	string "MTK platform name"
 

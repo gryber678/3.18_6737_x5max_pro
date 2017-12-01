@@ -1,0 +1,1 @@
+cmd_drivers/usb/storage/ums-isd200.o := /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/usb/storage/ums-isd200.o drivers/usb/storage/isd200.o 

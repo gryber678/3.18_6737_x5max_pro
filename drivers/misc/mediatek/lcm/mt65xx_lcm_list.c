@@ -227,6 +227,9 @@ LCM_DRIVER *lcm_driver_list[] = {
 #if defined(RM68200_AUO55_YKL_HD)
     &rm68200_auo55_ykl_hd_lcm_drv,
 #endif
+#if defined(RM68200_TM50_XLD_HD)
+    &rm68200_tm50_xld_hd_lcm_drv,
+#endif
 #if defined(RM68200_BOE50_JSJ_HD)
     &rm68200_boe50_jsj_hd_lcm_drv,
 #endif

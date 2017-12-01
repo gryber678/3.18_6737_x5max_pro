@@ -1,0 +1,1 @@
+cmd_drivers/pinctrl/mediatek/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/pinctrl/mediatek/built-in.o drivers/pinctrl/mediatek/pinctrl-mtk-common.o drivers/pinctrl/mediatek/pinctrl-mt6735.o 

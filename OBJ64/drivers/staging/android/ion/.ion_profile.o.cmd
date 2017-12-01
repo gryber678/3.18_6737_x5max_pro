@@ -1,0 +1,13 @@
+cmd_drivers/staging/android/ion/ion_profile.o := /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-gcc -Wp,-MD,drivers/staging/android/ion/.ion_profile.o.d  -nostdinc -isystem /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/../lib/gcc/aarch64-linux-android/5.3.1/include -I../arch/arm64/include -Iarch/arm64/include/generated  -I../include -Iinclude -I../arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I../include/uapi -Iinclude/generated/uapi -include ../include/linux/kconfig.h  -I../drivers/staging/android/ion -Idrivers/staging/android/ion -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -mgeneral-regs-only -fno-pic -mtune=cortex-a53 -march=armv8-a -O2 -ftree-vectorize -fno-delete-null-pointer-checks -Os -Wno-maybe-uninitialized --param=allow-store-data-races=0 -Werror=frame-larger-than=1 -Wframe-larger-than=1760 -fstack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -DCC_HAVE_ASM_GOTO  -I../../drivers/misc/mediatek/include -I../drivers/misc/mediatek/include  -I../../drivers/misc/mediatek/include/mt-plat/mt6735/include -I../drivers/misc/mediatek/include/mt-plat/mt6735/include  -I../../drivers/misc/mediatek/include -I../drivers/misc/mediatek/include  -I../../drivers/misc/mediatek/video/mt6735/videox/ -I../drivers/misc/mediatek/video/mt6735/videox/  -I../../drivers/staging/android/ion -I../drivers/staging/android/ion  -I../../drivers/misc/mediatek/mmp/ -I../drivers/misc/mediatek/mmp/  -I../../drivers/misc/mediatek/include/mt-plat -I../drivers/misc/mediatek/include/mt-plat -DION_RUNTIME_DEBUGGER=0    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(ion_profile)"  -D"KBUILD_MODNAME=KBUILD_STR(ion_profile)" -c -o drivers/staging/android/ion/ion_profile.o ../drivers/staging/android/ion/ion_profile.c
+
+source_drivers/staging/android/ion/ion_profile.o := ../drivers/staging/android/ion/ion_profile.c
+
+deps_drivers/staging/android/ion/ion_profile.o := \
+  ../drivers/staging/android/ion/ion_profile.h \
+  ../drivers/misc/mediatek/mmp/mmprofile.h \
+    $(wildcard include/config/mmprofile.h) \
+  ../drivers/misc/mediatek/mmp/mmprofile_static_event.h \
+
+drivers/staging/android/ion/ion_profile.o: $(deps_drivers/staging/android/ion/ion_profile.o)
+
+$(deps_drivers/staging/android/ion/ion_profile.o):

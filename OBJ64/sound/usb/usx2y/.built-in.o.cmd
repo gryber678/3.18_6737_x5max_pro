@@ -1,0 +1,1 @@
+cmd_sound/usb/usx2y/built-in.o :=  rm -f sound/usb/usx2y/built-in.o; /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ar rcsD sound/usb/usx2y/built-in.o

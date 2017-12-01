@@ -1,0 +1,1 @@
+cmd_net/netfilter/nf_nat.o := /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o net/netfilter/nf_nat.o net/netfilter/nf_nat_core.o net/netfilter/nf_nat_proto_unknown.o net/netfilter/nf_nat_proto_common.o net/netfilter/nf_nat_proto_udp.o net/netfilter/nf_nat_proto_tcp.o net/netfilter/nf_nat_helper.o 

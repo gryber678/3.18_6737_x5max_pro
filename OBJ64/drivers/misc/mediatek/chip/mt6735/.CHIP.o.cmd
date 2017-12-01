@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/chip/mt6735/CHIP.o := /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/chip/mt6735/CHIP.o drivers/misc/mediatek/chip/mt6735/mt_chip.o 

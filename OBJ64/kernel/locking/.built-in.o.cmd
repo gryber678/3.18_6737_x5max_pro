@@ -1,0 +1,1 @@
+cmd_kernel/locking/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o kernel/locking/built-in.o kernel/locking/mutex.o kernel/locking/semaphore.o kernel/locking/rwsem.o kernel/locking/mcs_spinlock.o kernel/locking/spinlock.o kernel/locking/lglock.o kernel/locking/rtmutex.o kernel/locking/rwsem-xadd.o 

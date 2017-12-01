@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/imgsensor/src/mt6735m/mn045_mipi_raw/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/imgsensor/src/mt6735m/mn045_mipi_raw/built-in.o drivers/misc/mediatek/imgsensor/src/mt6735m/mn045_mipi_raw/mn045mipi_Sensor.o 

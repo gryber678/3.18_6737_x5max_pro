@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/emi_mbw/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/emi_mbw/built-in.o drivers/misc/mediatek/emi_mbw/mt_emi_bm.o drivers/misc/mediatek/emi_mbw/mt_mem_bw.o 

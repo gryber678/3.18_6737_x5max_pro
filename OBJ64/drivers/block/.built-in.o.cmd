@@ -1,0 +1,1 @@
+cmd_drivers/block/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/block/built-in.o drivers/block/loop.o drivers/block/zram/built-in.o 

@@ -1,0 +1,1 @@
+cmd_security/keys/encrypted-keys/encrypted-keys.o := /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o security/keys/encrypted-keys/encrypted-keys.o security/keys/encrypted-keys/encrypted.o security/keys/encrypted-keys/ecryptfs_format.o 

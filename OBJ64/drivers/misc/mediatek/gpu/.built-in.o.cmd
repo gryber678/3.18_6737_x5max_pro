@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/gpu/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/gpu/built-in.o drivers/misc/mediatek/gpu/ged/built-in.o drivers/misc/mediatek/gpu/hal/built-in.o drivers/misc/mediatek/gpu/mt6735/built-in.o 

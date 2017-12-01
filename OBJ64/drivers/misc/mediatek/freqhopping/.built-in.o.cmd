@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/freqhopping/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/freqhopping/built-in.o drivers/misc/mediatek/freqhopping/mt_freqhopping_drv.o drivers/misc/mediatek/freqhopping/mt6735/built-in.o 

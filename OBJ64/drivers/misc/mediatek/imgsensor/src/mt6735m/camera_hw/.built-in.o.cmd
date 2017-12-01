@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/imgsensor/src/mt6735m/camera_hw/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/imgsensor/src/mt6735m/camera_hw/built-in.o drivers/misc/mediatek/imgsensor/src/mt6735m/camera_hw/kd_camera_hw.o 

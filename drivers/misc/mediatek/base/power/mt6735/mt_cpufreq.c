@@ -211,7 +211,7 @@
 
 /* DVFS OPP table */
 #ifdef CONFIG_ARCH_MT6735M
-#define CPU_DVFS_FREQ0_1 (1332000)	/* KHz */
+#define CPU_DVFS_FREQ0_1 (1282000)	/* KHz */
 #define CPU_DVFS_FREQ0   (1192000)	/* KHz */
 #define CPU_DVFS_FREQ1_1 (1092000)	/* KHz */
 #define CPU_DVFS_FREQ1   (1015000)	/* KHz */
@@ -221,9 +221,9 @@
 #define CPU_DVFS_FREQ5   (878000)	/* KHz */
 #define CPU_DVFS_FREQ6   (763000)	/* KHz */
 #define CPU_DVFS_FREQ7   (637000)	/* KHz */
-#define CPU_DVFS_FREQ8   (504000)	/* KHz */
-#define CPU_DVFS_FREQ9   (364000)	/* KHz */
-#define CPU_DVFS_FREQ10  (212000)	/* KHz */
+#define CPU_DVFS_FREQ8   (598000)	/* KHz */
+#define CPU_DVFS_FREQ9   (442000)	/* KHz */
+#define CPU_DVFS_FREQ10  (221000)	/* KHz */
 
 #define CPUFREQ_BOUNDARY_FOR_FHCTL (CPU_DVFS_FREQ1)
 #define CPUFREQ_FIX_FREQ_FOR_ES	(CPU_DVFS_FREQ2)
@@ -3229,8 +3229,8 @@ static void _mt_cpufreq_power_calculation(struct mt_cpu_dvfs *p, int oppidx, int
 #define CA53_REF_POWER		988	/* mW  */
 #define CA53_REF_FREQ		  1000000	/* KHz */
 #else
-#define CA53_REF_POWER		1238	/* mW  */
-#define CA53_REF_FREQ		  1350000	/* KHz */
+#define CA53_REF_POWER		1228	/* mW  */
+#define CA53_REF_FREQ		  1300000	/* KHz */
 #endif
 #define CA53_REF_VOLT		  125000	/* mV * 100 */
 

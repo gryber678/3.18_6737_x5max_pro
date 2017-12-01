@@ -1,0 +1,1 @@
+cmd_sound/core/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o sound/core/built-in.o sound/core/snd.o sound/core/snd-hwdep.o sound/core/snd-timer.o sound/core/snd-hrtimer.o sound/core/snd-pcm.o sound/core/snd-rawmidi.o sound/core/oss/built-in.o sound/core/seq/built-in.o sound/core/snd-compress.o 

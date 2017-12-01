@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/devapc/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/devapc/built-in.o drivers/misc/mediatek/devapc/mt6735/built-in.o 

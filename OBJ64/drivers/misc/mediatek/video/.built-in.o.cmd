@@ -1,0 +1,1 @@
+cmd_drivers/misc/mediatek/video/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/misc/mediatek/video/built-in.o drivers/misc/mediatek/video/mt6735/built-in.o drivers/misc/mediatek/video/common/built-in.o 

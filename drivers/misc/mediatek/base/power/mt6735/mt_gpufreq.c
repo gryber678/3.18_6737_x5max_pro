@@ -77,7 +77,7 @@
 #define GPU_DVFS_VOLT0	 (125000)	/* mV x 100 */
 #define GPU_DVFS_VOLT1	 (115000)	/* mV x 100 */
 #elif defined(CONFIG_ARCH_MT6735M)
-#define GPU_DVFS_FREQ0_0   (720000)	/* KHz */
+#define GPU_DVFS_FREQ0_0   (730000)	/* KHz */
 #define GPU_DVFS_FREQ0	 (549250)	/* KHz */
 #define GPU_DVFS_FREQ0_P   (497250)   /* KHz */
 #define GPU_DVFS_FREQ1	 (488500)	/* KHz */
@@ -851,7 +851,7 @@ static unsigned int _mt_gpufreq_dds_calc(unsigned int khz)
 {
 	unsigned int dds = 0;
 
-	if ((khz >= 250250) && (khz <= 747500))
+	if ((khz >= 250250) && (khz <= 800000))
 		dds = ((khz * 4 / 1000) * 8192) / 13;
 	else {
 		gpufreq_err("@%s: target khz(%d) out of range!\n", __func__, khz);
@@ -938,7 +938,7 @@ static unsigned int _mt_gpufreq_get_cur_freq(void)
 		freq = 250250 + (((mmpll - freq) / 0x2000) * 3250);
 	} else if ((mmpll >= 0x010E6000) && (mmpll <= 0x010F4000)) {
 		freq = 0x010E6000;
-		freq = 747500 + (((mmpll - freq) / 0x2000) * 6500);
+		freq = 800000 + (((mmpll - freq) / 0x2000) * 6500);
 	} else {
 		gpufreq_err("Invalid mmpll value = 0x%x\n", mmpll);
 		BUG();

@@ -1,0 +1,1 @@
+cmd_drivers/block/zram/zram.o := /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/block/zram/zram.o drivers/block/zram/zcomp_lzo.o drivers/block/zram/zcomp.o drivers/block/zram/zram_drv.o drivers/block/zram/zcomp_lz4.o 

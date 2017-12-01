@@ -1,7 +1,7 @@
 VERSION = 3
 PATCHLEVEL = 18
-SUBLEVEL = 79
-EXTRAVERSION =_Infernus_2_Premium
+SUBLEVEL = 84
+EXTRAVERSION =.extended-kernel-
 NAME = Shuffling Zombie Juror
 
 # *DOCUMENTATION*

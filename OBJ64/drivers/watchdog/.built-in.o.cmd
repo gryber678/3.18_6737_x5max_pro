@@ -1,0 +1,1 @@
+cmd_drivers/watchdog/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/watchdog/built-in.o drivers/watchdog/mediatek/built-in.o 

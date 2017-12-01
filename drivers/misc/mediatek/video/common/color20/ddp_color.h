@@ -79,7 +79,7 @@ enum {
 #define MIRAVISION_HW_VERSION       (9)
 #endif
 
-#define MIRAVISION_SW_VERSION       (1)	/* 1:Android Lollipop */
+#define MIRAVISION_SW_VERSION       (3)	/* 1:Android Lollipop */
 #define MIRAVISION_SW_FEATURE_VIDEO_DC  (0x1)
 #define MIRAVISION_SW_FEATURE_AAL       (0x2)
 #define MIRAVISION_SW_FEATURE_PQDS       (0x4)

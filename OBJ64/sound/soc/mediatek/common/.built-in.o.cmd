@@ -1,0 +1,1 @@
+cmd_sound/soc/mediatek/common/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o sound/soc/mediatek/common/built-in.o sound/soc/mediatek/common/auddrv_devtree_parser.o sound/soc/mediatek/common/auddrv_underflow_mach.o 

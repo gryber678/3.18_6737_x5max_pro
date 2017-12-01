@@ -1,0 +1,1 @@
+cmd_drivers/spi/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o drivers/spi/built-in.o drivers/spi/spi.o drivers/spi/mediatek/built-in.o 

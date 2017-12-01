@@ -1,0 +1,1 @@
+cmd_net/netlink/built-in.o :=  /home/senya/Source/builder/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-ld -EL    -r -o net/netlink/built-in.o net/netlink/af_netlink.o net/netlink/genetlink.o 
