@@ -12,7 +12,7 @@ do.cleanuponabort=0
 } # end properties
 
 # shell variables
-block=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/recovery;
+block=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/boot;
 is_slot_device=0;
 ramdisk_compression=auto;
 
