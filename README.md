@@ -3,5 +3,7 @@
 __________________________________________________________________________________________________________________
 Work: all
 __________________________________________________________________________________________________________________
-Tweaks: DFsync,Frandom,blx,gpu midgard r14p0,overclock,live display,Miravision,new governors,new schedulers,tweaks framebuffer's,thunderquake engine,remove DEBUG_INFO,add exfat fs.
+Tweaks: DFsync,Frandom,blx,gpu midgard r14p0,overclock,live display,Miravision,new governors,new schedulers,tweaks framebuffer's,thunderquake engine,remove DEBUG_INFO,add exfat,f2fs,ntfs fs, wakelockers.
+Add AnyKernel2 
 ___________________________________________________________________________________________________________________
+Beta: overclock cpu:1496000 gpu:700000
