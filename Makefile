@@ -1,7 +1,7 @@
 VERSION = 3
 PATCHLEVEL = 18
-SUBLEVEL = 84
-EXTRAVERSION =.extended-kernel-
+SUBLEVEL = 45
+EXTRAVERSION =_Soul
 NAME = Shuffling Zombie Juror
 
 # *DOCUMENTATION*

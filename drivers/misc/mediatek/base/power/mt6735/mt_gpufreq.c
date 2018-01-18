@@ -77,7 +77,7 @@
 #define GPU_DVFS_VOLT0	 (125000)	/* mV x 100 */
 #define GPU_DVFS_VOLT1	 (115000)	/* mV x 100 */
 #elif defined(CONFIG_ARCH_MT6735M)
-#define GPU_DVFS_FREQ0_0   (730000)	/* KHz */
+#define GPU_DVFS_FREQ0_0   (700000)	/* KHz */
 #define GPU_DVFS_FREQ0	 (549250)	/* KHz */
 #define GPU_DVFS_FREQ0_P   (497250)   /* KHz */
 #define GPU_DVFS_FREQ1	 (488500)	/* KHz */

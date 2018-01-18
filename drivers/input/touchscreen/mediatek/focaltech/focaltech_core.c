@@ -32,7 +32,9 @@
  * have been modified by MediaTek Inc. All revisions are subject to any receiver's
  * applicable license agreements with MediaTek Inc.
  */
-
+#ifdef CONFIG_TOUCHSCREEN_DOUBLETAP2WAKE
+#include <linux/input/doubletap2wake.h>
+#endif
 #include <linux/interrupt.h>
 #include <linux/i2c.h>
 #include <linux/sched.h>

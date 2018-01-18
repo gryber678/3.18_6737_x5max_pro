@@ -8,7 +8,11 @@ menuconfig INPUT_TOUCHSCREEN
 	  This option doesn't affect the kernel.
 
 	  If unsure, say Y.
-
+	  
+config TOUCHSCREEN_DOUBLETAP2WAKE
+	tristate "DoubleTap2Wake for touchscreens"
+	default n
+	
 if INPUT_TOUCHSCREEN
 
 config OF_TOUCHSCREEN
