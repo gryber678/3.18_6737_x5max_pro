@@ -274,6 +274,7 @@
 
 
 /* Turbo mode */
+#define CONFIG_CPU_DVFS_TURBO_MODE
 #ifdef CONFIG_CPU_DVFS_TURBO_MODE
 #define TURBO_MODE_BOUNDARY_CPU_NUM	2
 #define TURBO_MODE_FREQ(mode, freq)	\
@@ -5019,10 +5020,10 @@ static int cpufreq_state_proc_show(struct seq_file *m, void *v)
 
 	for_each_cpu_dvfs(i, p) {
 		seq_printf(m, "[%s/%d]\n"
-			   "dvfs_disable_by_procfs = %d\n"
-			   "limited_freq_by_hevc = %d KHz\n"
-			   "limited_power_by_thermal = %d mW\n"
-			   "dvfs_disable_by_early_suspend = %d\n" "dvfs_disable_by_suspend = %d\n"
+			   "dvfs_disable by procfs = %d\n"
+			   "limited_freq by hevc = %d KHz\n"
+			   "limited_power by thermal = %d mW\n"
+			   "dvfs_disable by early suspend = %d\n" "dvfs_disable_by_suspend = %d\n"
 #ifdef CONFIG_CPU_DVFS_POWER_THROTTLING
 			   "pwr_thro_mode = %d\n"
 #endif
@@ -5112,7 +5113,7 @@ static int cpufreq_freq_proc_show(struct seq_file *m, void *v)	/* <-XXX */
 {
 	struct mt_cpu_dvfs *p = (struct mt_cpu_dvfs *)m->private;
 
-	seq_printf(m, "%d KHz\n", p->ops->get_cur_phy_freq(p));
+	seq_printf(m, "Current freq %d KHz\n", p->ops->get_cur_phy_freq(p));
 
 	return 0;
 }
