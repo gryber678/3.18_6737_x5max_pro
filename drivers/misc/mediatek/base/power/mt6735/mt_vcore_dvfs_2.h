@@ -12,8 +12,8 @@
 #define VCORE_1_P_15_UV		1150000
 #define VCORE_1_P_05_UV		1050000
 
-#define FDDR_S0_KHZ		1066000		/* 6537: 1280000 */
-#define FDDR_S1_KHZ		800000		/* 6537: 936000 */
+#define FDDR_S0_KHZ             1280000		/* 6737: 1466000 */
+#define FDDR_S1_KHZ             938000		/* 6737: 1313000 */
 
 /* CLK MUX */
 #define FAXI_S0_KHZ		218000
