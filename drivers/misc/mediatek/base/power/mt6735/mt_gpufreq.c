@@ -79,8 +79,8 @@
 #elif defined(CONFIG_ARCH_MT6735M)
 #define GPU_DVFS_FREQ0_0   (740000)	/* KHz */
 #define GPU_DVFS_FREQ0	 (599250)	/* KHz */
-#define GPU_DVFS_FREQ1   (497250)   /* KHz */
-#define GPU_DVFS_FREQ2	 (388500)	/* KHz */
+#define GPU_DVFS_FREQ1   (617250)   /* KHz */
+#define GPU_DVFS_FREQ2	 (418500)	/* KHz */
 #define GPU_DVFS_FREQ3	 (249000)	/* KHz */
 #define GPUFREQ_LAST_FREQ_LEVEL	(GPU_DVFS_FREQ3)
 
