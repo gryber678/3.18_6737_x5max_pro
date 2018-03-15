@@ -9,3 +9,8 @@ config SRCARCH
 	option env="SRCARCH"
 
 source "arch/$SRCARCH/Kconfig"
+menu "Tweaks"
+config MORPH_CPU_MORPH6737T
+	bool 'Overclocking to 6737t freqs'
+endmenu
+#source "drivers/misc/mediatek/gpu/gpu_mali/mali_midgard/mali-r7p0_v2/drivers/gpu/arm/midgard/Kconfig"
