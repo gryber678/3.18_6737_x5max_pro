@@ -4,6 +4,9 @@
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  */
+#ifdef CONFIG_GPU_VCOREFS
+#define MT_GPUFREQ_VCOREFS_ENABLED
+#endif
 #include <linux/kernel.h>
 #include <linux/module.h>
 #include <linux/sched.h>
@@ -77,15 +80,15 @@
 #define GPU_DVFS_VOLT0	 (125000)	/* mV x 100 */
 #define GPU_DVFS_VOLT1	 (115000)	/* mV x 100 */
 #elif defined(CONFIG_ARCH_MT6735M)
-#define GPU_DVFS_FREQ0_0   (740000)	/* KHz */
-#define GPU_DVFS_FREQ0	 (599250)	/* KHz */
-#define GPU_DVFS_FREQ1   (617250)   /* KHz */
-#define GPU_DVFS_FREQ2	 (418500)	/* KHz */
-#define GPU_DVFS_FREQ3	 (249000)	/* KHz */
-#define GPUFREQ_LAST_FREQ_LEVEL	(GPU_DVFS_FREQ3)
+#define GPU_DVFS_FREQ0_0   (650000)	/* KHz */
+#define GPU_DVFS_FREQ0	 (549250)	/* KHz */
+#define GPU_DVFS_FREQ0_P   (497250)   /* KHz */
+#define GPU_DVFS_FREQ1	 (448500)	/* KHz */
+#define GPU_DVFS_FREQ2	 (299000)	/* KHz */
+#define GPUFREQ_LAST_FREQ_LEVEL	(GPU_DVFS_FREQ2)
 
 #define GPU_DVFS_VOLT0	 (125000)	/* mV x 100 */
-#define GPU_DVFS_VOLT1	 (116000)	/* mV x 100 */
+#define GPU_DVFS_VOLT1	 (115000)	/* mV x 100 */
 #define GPU_DVFS_VOLT2	 (105000)	/* mV x 100 */
 #else
 #define GPU_DVFS_FREQ0	 (598000)	/* KHz */
@@ -100,7 +103,7 @@
 
 /* efuse */
 #define GPUFREQ_EFUSE_INDEX		 (3)
-#define GPU_DEFAULT_MAX_FREQ_MHZ	(450)
+#define GPU_DEFAULT_MAX_FREQ_MHZ	(650)
 #define GPU_DEFAULT_TYPE			(1)
 
 /*
@@ -128,7 +131,7 @@
 
 static sampler_func g_pFreqSampler;
 static sampler_func g_pVoltSampler;
-#define MT_GPUFREQ_INPUT_BOOST
+
 static gpufreq_power_limit_notify g_pGpufreq_power_limit_notify;
 #ifdef MT_GPUFREQ_INPUT_BOOST
 static gpufreq_input_boost_notify g_pGpufreq_input_boost_notify;
@@ -182,10 +185,9 @@ static struct mt_gpufreq_table_info mt_gpufreq_opp_tbl_e1_1[] = {
 
 /* LV2: 650MHz */
 static struct mt_gpufreq_table_info mt_gpufreq_opp_tbl_e1_2[] = {
-	GPUOP(GPU_DVFS_FREQ0_0, GPU_DVFS_VOLT0),
+	GPUOP(GPU_DVFS_FREQ0_0, GPU_DVFS_VOLT1),
 	GPUOP(GPU_DVFS_FREQ1, GPU_DVFS_VOLT1),
 	GPUOP(GPU_DVFS_FREQ2, GPU_DVFS_VOLT2),
-	GPUOP(GPU_DVFS_FREQ3, GPU_DVFS_VOLT2),
 };
 
 /* LV4: add 500MHz for D2+ */
@@ -646,7 +648,7 @@ static void _mt_gpufreq_power_calculation(unsigned int idx, unsigned int freq, u
 #else
 #define GPU_ACT_REF_POWER		720		/* mW  */
 #endif
-#define GPU_ACT_REF_FREQ		650000	/* KHz */
+#define GPU_ACT_REF_FREQ		450000	/* KHz */
 #define GPU_ACT_REF_VOLT		115000	/* mV x 100 */
 
 	unsigned int p_total = 0, p_dynamic = 0, p_leakage = 0, ref_freq = 0, ref_volt = 0;
@@ -852,7 +854,7 @@ static unsigned int _mt_gpufreq_dds_calc(unsigned int khz)
 {
 	unsigned int dds = 0;
 
-	if ((khz >= 250250) && (khz <= 800000))
+	if ((khz >= 250250) && (khz <= 747500))
 		dds = ((khz * 4 / 1000) * 8192) / 13;
 	else {
 		gpufreq_err("@%s: target khz(%d) out of range!\n", __func__, khz);
@@ -883,8 +885,8 @@ static int _mt_gpufreq_set_cur_volt(unsigned int new_oppidx)
 #ifdef MT_GPUFREQ_VCOREFS_ENABLED
 	switch (mt_gpufreqs[new_oppidx].gpufreq_khz) {
 #ifdef CONFIG_ARCH_MT6735M
-	case GPU_DVFS_FREQ0_0: 
-		g_last_gpu_dvs_result = vcorefs_request_dvfs_opp(KIR_GPU, OPPI_PERF_ULTRA);
+	case GPU_DVFS_FREQ0_P:
+	case GPU_DVFS_FREQ0_0:
 	case GPU_DVFS_FREQ0:
 		g_last_gpu_dvs_result = vcorefs_request_dvfs_opp(KIR_GPU, OPPI_PERF_ULTRA);
 #else
@@ -903,9 +905,6 @@ static int _mt_gpufreq_set_cur_volt(unsigned int new_oppidx)
 #endif
 		break;
 	case GPU_DVFS_FREQ2:
-		g_last_gpu_dvs_result = vcorefs_request_dvfs_opp(KIR_GPU, OPPI_LOW_PWR);
-		break;
-	case GPU_DVFS_FREQ3:
 		g_last_gpu_dvs_result = vcorefs_request_dvfs_opp(KIR_GPU, OPPI_LOW_PWR);
 		break;
 	default:
@@ -942,7 +941,7 @@ static unsigned int _mt_gpufreq_get_cur_freq(void)
 		freq = 250250 + (((mmpll - freq) / 0x2000) * 3250);
 	} else if ((mmpll >= 0x010E6000) && (mmpll <= 0x010F4000)) {
 		freq = 0x010E6000;
-		freq = 800000 + (((mmpll - freq) / 0x2000) * 6500);
+		freq = 747500 + (((mmpll - freq) / 0x2000) * 6500);
 	} else {
 		gpufreq_err("Invalid mmpll value = 0x%x\n", mmpll);
 		BUG();
@@ -1513,7 +1512,7 @@ int mt_gpufreq_target(unsigned int idx)
 	unsigned int target_freq, target_volt, target_OPPidx;
 	unsigned int cur_freq;
 	int ret = 0;
-#define MT_GPUFREQ_PERFORMANCE_TEST
+
 #ifdef MT_GPUFREQ_PERFORMANCE_TEST
 	return 0;
 #endif
@@ -1531,7 +1530,6 @@ int mt_gpufreq_target(unsigned int idx)
 		mutex_unlock(&mt_gpufreq_lock);
 		return -ENOSYS;
 	}
-#define MT_GPU_DVFS_RANDOM_TEST
 #ifdef MT_GPU_DVFS_RANDOM_TEST
 	idx = _mt_gpufreq_idx_get(5);
 	gpufreq_dbg("@%s: random test index is %d !\n", __func__, idx);
